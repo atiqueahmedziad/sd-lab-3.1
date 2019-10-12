@@ -63,7 +63,7 @@
                     <div id="page-1" class= "page one">
                         <h2 class="heading">Education</h2>
                         <?php foreach ($educationList as $educationEach): ?>
-                        <div class="resume-wrap d-flex ftco-animate">
+                        <div class="resume-wrap d-flex">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="flaticon-ideas"></span>
                             </div>
@@ -81,7 +81,7 @@
                         <h2 class="heading text-uppercase">Work Experience</h2>
                         <?php if(isset($_SESSION['id'])): ?>
                             <?php foreach ($workList as $workEach): ?>
-                            <div class="resume-wrap d-flex ftco-animate">
+                            <div class="resume-wrap d-flex">
                                 <div class="icon d-flex align-items-center justify-content-center">
                                     <span class="flaticon-ideas"></span>
                                 </div>
@@ -121,7 +121,7 @@
                         <div id="page-3" class= "page three">
                         <h2 class="heading text-uppercase">Organization Experience</h2>
                         <?php foreach ($orgList as $eachOrg): ?>
-                            <div class="resume-wrap d-flex ftco-animate">
+                            <div class="resume-wrap d-flex">
                                 <div class="icon d-flex align-items-center justify-content-center">
                                     <span class="flaticon-ideas"></span>
                                 </div>
@@ -160,7 +160,7 @@
                         <div class="row">
                             <?php foreach($skillList as $eachSkill): ?>
                                 <div class="col-md-6 animate-box">
-                                    <div class="progress-wrap ftco-animate">
+                                    <div class="progress-wrap">
                                         <h3><?php echo $eachSkill['language']; ?></h3>
                                         <div class="progress">
                                             <div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
