@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <section class="ftco-section ftco-project" id="portfolio">
+    <section class="ziad-section" id="portfolio">
         <div class="container-fluid px-md-0">
             <div class="row no-gutters justify-content-center pb-5">
                 <div class="col-md-12 heading-section text-center">

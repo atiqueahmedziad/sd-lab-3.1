@@ -27,7 +27,6 @@
             } else if($_GET['error'] == 'wrongPassword'){
                 $errorMsg = 'Password is wrong!';
             }
-            exit();
         }
 
         $email = $password = '';

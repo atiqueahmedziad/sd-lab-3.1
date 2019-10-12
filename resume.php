@@ -5,6 +5,7 @@
     include 'includes/org-experience.php';
     include 'includes/skills.php';
     include 'includes/adward.php';
+    include 'includes/project.php';
 ?>
 
 <html>
@@ -180,14 +181,14 @@
                         <div id="page-5" class= "page five">
                         <h2 class="heading">Awards</h2>
                         <?php foreach ($adwardList as $eachAward): ?>
-                        <div class="resume-wrap d-flex ftco-animate">
+                        <div class="resume-wrap d-flex">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="flaticon-ideas"></span>
                             </div>
                             <div class="text pl-3">
                                 <span class="date"><?php echo $eachAward['year']; ?></span>
                                 <h2><?php echo $eachAward['award_title']; ?></h2>
-                                <span class="position"><?php $eachAward['organizer']; ?></span>
+                                <span class="position"><?php echo $eachAward['organizer']; ?></span>
                                 <p><?php echo $eachAward['p_description']; ?></p>
     <!--                            <a href="https://blog.mozilla.org/addons/2016/10/05/friend-of-add-ons-atique-ahmed-ziad"><button class="btn btn-dark">Detail Blog Post</button></a>-->
                                 <?php if(!empty($eachAward['button'])): ?>
@@ -204,31 +205,25 @@
                     <!-- Projects -->
                     <div id="page-6" class= "page six">
                         <h2 class="heading">Projects</h2>
-                        <div class="resume-wrap d-flex ftco-animate">
+                        <?php foreach($projectList as $eachProject): ?>
+                        <div class="resume-wrap d-flex">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="flaticon-ideas"></span>
                             </div>
                             <div class="text pl-3">
-                                <span class="date">October 2018 - Present</span>
-                                <h2>Easy Project Management System with Gantt Chart</h2>
-                                <span class="position">Java, JavaFX, MySQL</span>
-                                <p>Easy project management tool is a desktop application made with Java and Javafx which enables you to manage your personal/office projects. You can add serveral projects & project’s tasks with milestone which will help you to complete the project successfully.</p>
-                                <a target="_blank" href="https://github.com/atiqueahmedziad/Easy-Project-Management-Tool"><button class="btn btn-dark">Github Repository</button></a>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=W6fC6OQOjd0"><button class="btn btn-dark">Youtube</button></a>
+                                <span class="date"><?php echo $eachProject['date']; ?></span>
+                                <h2><?php echo $eachProject['project_name']; ?></h2>
+                                <span class="position"><?php echo $eachProject['tech_uses']; ?></span>
+                                <p><?php echo $eachProject['p_description']; ?></p>
+                                <?php if(!empty($eachProject['button'])): ?>
+                                    <?php foreach(explode('&Each&', $eachProject['button']) as $buttonAll): ?>
+                                        <?php $eachButton = explode(',', $buttonAll); ?>
+                                        <a target="_blank" href="<?php echo $eachButton[0]; ?>"><button class="btn btn-dark"><?php echo $eachButton[1]; ?></button></a>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
                             </div>
                         </div>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <span class="date">February 2014</span>
-                                <h2>First Aid</h2>
-                                <span class="position">HTML, CSS, JavaScript, JQuery</span>
-                                <p>Developed this webapp for Firefox OS where uer can get First Aid tips and can see nearby hospitals. Nearby Hospitals is done with Google map API requesting hospitals information within 1 km of user’s current location.</p>
-                                <a target="_blank" href="https://github.com/atiqueahmedziad/First-Aid"><button class="btn btn-dark">Github Repository</button></a>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
 
                     <?php endif; ?>

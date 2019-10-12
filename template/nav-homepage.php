@@ -6,7 +6,7 @@
         </button>
         <div class="collapse justify-right navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav" id="navTop">
-                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="#home" class="nav-link"><span>Home</span></a></li>
                 <li class="nav-item"><a href="#about-me" class="nav-link"><span>About me</span></a></li>
                 <li class="nav-item"><a href="resume.php" class="nav-link"><span>Resume</span></a></li>
                 <li class="nav-item"><a href="#portfolio" class="nav-link"><span>Portfolio</span></a></li>
