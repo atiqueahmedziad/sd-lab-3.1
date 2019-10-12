@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a9dca900-e5d4-4e2b-bb69-052dd2eb192f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume.php" beforeDir="false" afterPath="$PROJECT_DIR$/resume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +114,8 @@
       <workItem from="1570771779479" duration="3090000" />
       <workItem from="1570780694242" duration="31845000" />
       <workItem from="1570828080521" duration="2865000" />
-      <workItem from="1570851434593" duration="25024000" />
+      <workItem from="1570851434593" duration="25169000" />
+      <workItem from="1570901656947" duration="42000" />
     </task>
     <servers />
   </component>
@@ -125,7 +127,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

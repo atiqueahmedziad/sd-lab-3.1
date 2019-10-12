@@ -122,7 +122,7 @@
             </div>
 
             <div class="col-md-6 d-flex">
-                <div class="img" style="background-image: url(images/IMG_0005.JPG);"></div>
+                <div class="img" style="background-image: url(images/IMG_0005.jpg);"></div>
             </div>
         </div>
     </div>
